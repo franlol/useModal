@@ -4,6 +4,22 @@
   "description": "React hook to wrap a component and show/hide it as a modal",
   "author": "franlol",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "custom",
+    "hook",
+    "usemodal",
+    "modal",
+    "franlol",
+    "use",
+    "modal",
+    "wrap",
+    "component"
+  ],
+  "bugs": {
+    "url": "https://github.com/franlol/useModal/issues"
+  },
+  "homepage": "https://github.com/franlol/useModal#readme",
   "repository": "https://github.com/franlol/useModal.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

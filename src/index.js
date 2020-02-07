@@ -1,21 +1,21 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState({
-    counter: 0
-  })
+import styles from './useModal.styles'
 
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval)
-    }
-  }, [])
+const useModal = Element => {
+  const [showModal, setShowModal] = useState(false)
 
-  return counter
+  const toggle = () => setShowModal(!showModal)
+
+  const Modal = props => {
+    return (
+      <div style={styles}>
+        <Element {...props} />
+      </div>
+    )
+  }
+
+  return [Modal, showModal, toggle]
 }
+
+export default useModal
