@@ -1,6 +1,6 @@
 {
   "name": "react-hook-usemodal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook to wrap a component and show/hide it as a modal",
   "author": "franlol",
   "license": "MIT",
